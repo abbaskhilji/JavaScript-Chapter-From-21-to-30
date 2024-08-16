@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 21 To 25</title>
+</head>
+
+<body>
+
+    <input type="text" id="userInput" placeholder="Enter text">
+    <button onclick="showLastCharacter()">Show Last Character</button>
+    <p id="output"></p>
+    <script>
+        document.write("<h1>QUESTION NO :01</h1>")
+        var FirstName = prompt(" What is your First Name ");
+        var LastName = prompt("  what is Your Last Name ");
+        var CompleteName = FirstName + " " + LastName;
+        alert("Welcome to The Website " + CompleteName);
+        document.write("Welcome to The Website " + CompleteName);
+
+
+        document.write("<h1>QUESTION NO :02</h1>");
+        var MobileModel = prompt("What is your favourite mobile model");
+        var MobileLenght = MobileModel.length;
+        document.write(" The lenght of your string " + MobileLenght);
+
+
+        document.write("<h1>QUESTION NO :03</h1>");
+        var name = "Pakistan</br>";
+        document.write(name);
+        var IndexNo = name.indexOf("n");
+        document.write("The index no of pakistan is " + IndexNo);
+
+
+        document.write("<h1>QUESTION NO :04</h1>");
+        var LastEle = "Hello World";
+        var Lastele = LastEle.lastIndexOf("l");
+        document.write(Lastele);
+
+
+        document.write("<h1>QUESTION NO :05</h1>");
+        var MiddleLetter = "pakistani";
+        var FindOut = MiddleLetter.charAt(3);
+        document.write("From The word pakistani the letter at 3rd index is " + FindOut);
+
+
+        document.write("<h1>QUESTION NO :06</h1>");
+        var city = "Hyderabad";
+        document.write("Before replacing the value is   ", city, "</br>");
+        var newthing = city.replace('Hyder', 'Islam');
+        document.write("After replacing the value is   ", newthing);
+
+
+
+
+
+        document.write("<h1>QUESTION NO :07</h1>");
+        var ki = "Ali" & "Sami are the best friend" & "They played cricket" & "football together";
+        document.write(ki);
+
+        document.write("<h1>QUESTION NO :08</h1>");
+        var num = "123"
+        document.write("Firstly it is a  ", typeof num, "123</br>");
+        var num1 = Number(num);
+        document.write("now it is a  ", typeof num1, "123");
+
+
+
+        document.write("<h1>QUESTION NO :10</h1>");
+        var letter1 = prompt("Enter any word");
+        document.write("The user input is  ", letter1, "</br>");
+        letter1 = letter1.toUpperCase();
+        document.write("Now it was change into Uppercase  ", letter1, "</br>");
+
+
+
+        document.write("<h1>QUESTION NO :11</h1>");
+        var word1 = prompt("Enter any word which i change into titlecase");
+        document.write("The word which user enter is :", word1, "</br>");
+        function toTitleCase(tit) {
+
+            return tit.replace(/\b\w/g, char => char.toUpperCase());
+
+
+        }
+        var new1 = toTitleCase(word1)
+        console.log(new1);
+        document.write("Now I Change it into TitleCase: ", new1)
+
+
+        // This is the another way tochange into toTitleCase
+        //         function toTitleCase(str) {
+        //     return str.split(' ').map(word => 
+        //         word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        //     ).join(' ');
+        // }
+
+        // Example usage
+        // let myString = "hello world! this is a title case example.";
+        // let titleCaseString = toTitleCase(myString);
+        // console.log(titleCaseString); // Output: "Hello World! This Is A Title Case Example."
+
+        document.write("<h1>QUESTION NO :14</h1>");
+        var no3 = 12.87;
+        document.write(`The value is ${no3}</br>`)
+        var newno3 = no3.toString();
+        var final = newno3.replace(".", "");
+        document.write("After removing dot the value is ", final);
+
+
+
+
+        document.write("<h1>QUESTION NO :13</h1>");
+        var intro = prompt("What is your name");
+        for (let i = 0; i < intro.length; i++) {
+            switch (intro[i]) {
+                case "@":
+                    alert("Enter valid username")
+                    break;
+                case "!":
+                    alert("Enter valid username")
+                    break;
+                case ".":
+                    alert("Enter valid username")
+                    break;
+                case ",":
+                    alert("Enter valid username")
+                    break;
+
+                default:
+                    break;
+            }
+
+        };
+
+
+
+
+        document.write("<h1>QUESTION NO :14</h1>");
+        var bakeryitem = ["pineapple cake", "apple pie", "patties", "cookie", "cake"];
+
+        function searchItem(item) {
+            item = item.toLowerCase();
+
+
+
+            switch (item) {
+                case bakeryitem[0]:
+                    alert("pineapple cake is available")
+
+                    break;
+                case bakeryitem[1]:
+                    alert("apple pie is available")
+
+                    break;
+                case bakeryitem[2]:
+                    alert("patties is available")
+
+                    break;
+                case bakeryitem[3]:
+                    alert("cookie is available")
+
+                    break;
+                case bakeryitem[4]:
+                    alert("cake is available")
+
+                    break;
+
+                default:
+                    alert(`${item} is not available`)
+                    break;
+            }
+        };
+
+        var question = prompt("What item do you want from our bakery");
+        searchItem(question);
+
+
+
+        document.write("<h1>QUESTION NO :12</h1>");
+        var no3 = 12.87;
+        document.write(`The value is ${no3}</br>`)
+        var newno3 = no3.toString();
+        var final = newno3.replace(".", "");
+        document.write("After removing dot the value is ", final);
+
+
+        document.write("<h1>QUESTION NO :15</h1>");
+        var pass = prompt("Enter a password");
+        // function newpass() {
+        //     switch (pass) {
+        //         case pass.lenght !== 6:
+        //             alert("Please Enter a Valid Password");
+
+        //             break;
+        //         case pass[0] == 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0:
+        //             alert("Please Enter a Valid Password");
+
+        //             break;
+        //         case pass !== "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z" | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 :
+        //         alert("Please Enter A valid Password")
+        //             break;
+
+
+        //         default:
+        //             break;
+        //     }
+
+        // }
+        // if ( pass!== "a"||"b"||"c"||"d") {
+        //     alert("please enter a valid password")
+        // }
+        document.write("<h1>QUESTION NO :16</h1>");
+        var university = "SMIU";
+        var uniArr = Array.from(university);
+        document.write(uniArr);
+        console.log(uniArr);
+
+        document.write("<h1>QUESTION NO :17</h1>");
+        var input = prompt("Enter any value");
+        var indexword = input.slice(-1);
+        document.write(indexword);
+        function showLastCharacter() {
+            let input = document.getElementById("userInput").value;
+            let lastChar = input.slice(-1); // Get the last character
+            document.getElementById("output").textContent = lastChar;
+        };
+
+
+
+        var theExtract = "The quick brown fox jumps over the lazy dog";
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

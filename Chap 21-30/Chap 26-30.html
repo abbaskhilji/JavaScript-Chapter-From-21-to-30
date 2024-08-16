@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 26 to 30</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        document.write("<h1>QUESTION NO: 01</h1>");
+
+        var integar = prompt("Enter any number which is positive ");
+        document.write("1.before rounding the value is", integar, "</br>");
+        var no = Number(integar);
+        var cycle = Math.round(integar);
+        document.write("2.after rounding the value is ", cycle, "</br>");
+        var Floor = Math.floor(integar);
+        document.write(`3.The Floor value of the user input is ${Floor} </br>`);
+        var Ceil = Math.ceil(integar);
+        document.write(`4.The ceil value of the user input is ${Ceil}</br>`);
+
+
+
+        document.write("<h1>QUESTION NO: 02</h1>");
+        var integar2 = prompt("Enter a negative number");
+        document.write(`1.The user input is ${integar2}</br>`);
+        var roundOf = Math.round(integar2);
+        document.write(`2.The round off value of the user input is ${roundOf}</br>`);
+        var Floor1 = Math.floor(integar2);
+        document.write(`3.The floor  value of the user input is ${Floor1}</br>`);
+        var Ceil1 = Math.ceil(integar2);
+        document.write(`4.The ceil  value of the user input is ${Ceil1}`);
+
+
+
+
+
+        document.write("<h1>QUESTION NO: 03</h1>");
+        var integar3 = -1290;
+        document.write(`1.The user input is ${integar3}</br>`);
+        var abs = Math.abs(integar3);
+        document.write(`2.And the absolute value of the user input is ${abs}`);
+
+
+
+        // document.write("<h1>QUESTION NO: 04</h1>");
+        function randomDice() {
+            var DiceValue = Math.floor(Math.random() * 6) + 1;
+            document.getElementById("random").textContent = DiceValue;
+
+
+        };
+
+
+
+        // document.write("<h1>QUESTION NO: 05</h1>");
+        function tails() {
+            let randomNumber = Math.random();
+            console.log(randomNumber);
+
+            let result = randomNumber < 0.5 ? "Heads" : "Tails";
+            document.getElementById('tossButton').innerText = result;
+
+        };
+
+
+
+        // document.write("<h1>QUESTION NO: 06</h1>");
+        function randomNum() {
+            var AnyNo = Math.random();
+            var newNum = Math.floor(AnyNo * 100) + 1;
+            document.getElementById("AnyNum").textContent = newNum;
+
+        };
+
+
+
+
+        document.write("<h1>QUESTION NO :07</h1>")
+        var weight = prompt("Enter your Body weight");
+        Number(weight);
+        var parsing = parseFloat(weight)
+        if (weight == 50 || weight == 50.2 || weight || 50.2, "Kgs") {
+            document.write(parsing);
+
+        };
+
+
+        document.write("<h1>QUESTION NO :08</h1>");
+        var secre = prompt("Enter No From 1 to 10");
+        Number(secre);
+        var secretNo = Math.floor(Math.random() * 10)  + 1;
+        console.log(secretNo);
+        
+        if (secre == secretNo) {
+            alert("Congratulations!");
+            
+        }
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <h1>QUESTION NO: 04</h1>
+    <button onclick="randomDice()">Dice Values</button>
+    <p id="random"></p>
+    <h1>QUESTION NO:05</h1>
+    <button onclick="tails()">Toss Button</button>
+    <p id="tossButton"></p>
+    <h1>QUESTION NO:06</h1>
+    <button onclick="randomNum()">Random no 1 to 100</button>
+    <p id="AnyNum"></p>
+
+
+</body>
+
+</html>
